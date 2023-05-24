@@ -1,5 +1,10 @@
 /* Global Styles */
 
+html {
+  transform: scale(0.8); 
+  transform-origin: top;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
