@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUP Map</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Some NavBar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="map-section">
+      <h2>PUP Map</h2>
+      
+      <div class="img-container">
+          <img src="images/pup_map2.png" alt="PUP Map" usemap="#PUPmap" width="953" height="720">
+
+          <map name="PUPmap">
+            <area shape="rect" coords="630,81, 779,160" alt="10-PUP Gymnasium" onmouseover="openModal('10-Gymnasium')"; onmouseout="closeModal('10-Gymnasium');">
+            <area shape="rect" coords="662,184, 764,272" alt="22-Open Court" onmouseover="openModal('22-Open-Court');" onmouseout="closeModal('22-Open-Court');">
+            <area shape="rect" coords="441,68, 479,204" alt="25-PE" onmouseover="openModal('25-PE');" onmouseout="closeModal('25-PE');">
+            <area shape="rect" coords="507,91, 610,146" alt="37-PUP Pool" onmouseover="openModal('37-Pool');" onmouseout="closeModal('37-Pool');">
+            <area shape="poly" coords="548,173, 660, 175, 660,293, 601,291, 548,197, 548,173" alt="38-Tennis" onmouseover="openModal('38-Tennis');" onmouseout="closeModal('38-Tennis');">
+            <area shape="circle" coords="874, 221, 14" alt="40-West Gate" onmouseover="openModal('40-West-Gate')"; onmouseout="closeModal('40-West-Gate');">
+          </map>
+
+          <div class="modal" id="10-Gymnasium" >
+            <div class="modal-content">
+              <div class="right">
+                <img src="images/gymnasium.jpg" alt="An image containing the PUP Gymnasium">
+              </div>
+
+              <div class="left">
+                <h2>10 - GYMNASIUM</h2>
+                <p>image tas short desc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="22-Open-Court" >
+            <div class="modal-content">
+              <div class="right">
+                <img src="images/openCourt.jpg" alt="An image containing the PUP Open Court">
+              </div>
+
+              <div class="left">
+                <h2>22 - OPEN COURT</h2>
+                <p>image tas short desc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="25-PE" >
+            <div class="modal-content">
+              <div class="right">
+                <img src="images/pe.jpg" alt="An image containing the PUP PE Building">
+              </div>
+
+              <div class="left">
+                <h2>25 - PE BUILDING</h2>
+                <p>image tas short desc.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal" id="37-Pool" >
+            <div class="modal-content">
+              <div class="right">
+                <img src="images/pool.jpg" alt="An image containing the PUP Swimming Pool">
+              </div>
+
+              <div class="left">
+                <h2>10 - SWIMMING POOL</h2>
+                <p>image tas short desc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="38-Tennis" >
+            <div class="modal-content">
+              <div class="right">
+                <img src="images/tennis.jpg" alt="An image containing the PUP Tennis Court">
+              </div>
+
+              <div class="left">
+                <h2>38 -TENNIS</h2>
+                <p>image tas short desc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="40-West-Gate" >
+            <div class="modal-content">
+              <h2>40 - WEST GATE</h2>
+              <p>image tas short desc.</p>
+            </div>
+          </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 PUP Map. All rights reserved.</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
