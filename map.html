@@ -1,191 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PUP Map</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/pupLogo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/pupLogo.png" type="image/png">
 </head>
 
-
 <body>
-  <main>
-    <section class="map-section">
-      <h2>PUP Map</h2>
-      
-      <div class="img-container">
-          <img src="images/pup_map3.png" alt="PUP Map" usemap="#PUPmap" width="750" height="567">
+    <header>
+        <h1>PUP Map</h1>
+    </header>
+    <main>
+        <section class="map-section">
+            <div class="img-container">
+                <img src="images/pup_map3.png" id="photo" alt="PUP Map" usemap="#PUPmap" width="750" height="567">
 
-          <map name="PUPmap">
-            <area alt="9-Grand Stand" shape="poly" coords="510,317, 524,328, 480,392, 466,381, 510,317" onmouseover="openModal('9-Grand-Stand')"; onmouseout="closeModal('9-Grand-Stand');">
-            <area alt="10-PUP Gymnasium" shape="rect" coords="496,64, 613,127"  onmouseover="openModal('10-Gymnasium')"; onmouseout="closeModal('10-Gymnasium');"> 
-            <area alt="11-Chapel" shape="circle" coords="370,449, 55"  onmouseover="openModal('11-Chapel');" onmouseout="closeModal('11-Chapel');">
-            <area alt="19-Main Gate" shape="circle" coords="683,251, 12"  onmouseover="openModal('19-Main-Gate');" onmouseout="closeModal('19-Main-Gate');">
-            <area alt="22-Open Court" shape="poly" coords="431,136, 521,137, 521,227, 473,228, 431,155, 431,136"  onmouseover="openModal('22-Open-Court');" onmouseout="closeModal('22-Open-Court');">
-            <area alt="23-CNFS" shape="rect" coords="291,519, 421,537" onmouseover="openModal('23-CNFS');" onmouseout="closeModal('23-CNFS');">
-            <area alt="25-PE" shape="rect" coords="347,54, 378,161"  onmouseover="openModal('25-PE');" onmouseout="closeModal('25-PE');">
-            <area alt="32-Obelisk" shape="circle" coords="427,251, 20"  onmouseover="openModal('32-Obelisk');" onmouseout="closeModal('32-Obelisk');">
-            <area alt="37-PUP Pool" shape="rect" coords="398,72, 481,116"  onmouseover="openModal('37-Pool');" onmouseout="closeModal('37-Pool');">
-            <area alt="38-Tennis" shape="rect" coords="521,144, 602,215"  onmouseover="openModal('38-Tennis');" onmouseout="closeModal('38-Tennis');">
-            <area alt="40-West Gate" shape="circle" coords="689,174, 14"  onmouseover="openModal('40-West-Gate')"; onmouseout="closeModal('40-West-Gate');">
-          </map>
+                <map name="PUPmap">
+                    <area alt="9-Grand Stand" shape="poly" coords="510,317, 524,328, 480,392, 466,381, 510,317" onmouseover="openModal('9-Grand-Stand')"; onmouseout="closeModal('9-Grand-Stand');">
+                    <area alt="10-PUP Gymnasium" shape="rect" coords="496,64, 613,127"  onmouseover="openModal('10-Gymnasium')"; onmouseout="closeModal('10-Gymnasium');"> 
+                    <area alt="11-Chapel" shape="circle" coords="370,449, 55"  onmouseover="openModal('11-Chapel');" onmouseout="closeModal('11-Chapel');">
+                    <area alt="19-Main Gate" shape="circle" coords="683,251, 12"  onmouseover="openModal('19-Main-Gate');" onmouseout="closeModal('19-Main-Gate');">
+                    <area alt="22-Open Court" shape="poly" coords="431,136, 521,137, 521,227, 473,228, 431,155, 431,136"  onmouseover="openModal('22-Open-Court');" onmouseout="closeModal('22-Open-Court');">
+                    <area alt="23-CNFS" shape="rect" coords="291,519, 421,537" onmouseover="openModal('23-CNFS');" onmouseout="closeModal('23-CNFS');">
+                    <area alt="25-PE" shape="rect" coords="347,54, 378,161"  onmouseover="openModal('25-PE');" onmouseout="closeModal('25-PE');">
+                    <area alt="32-Obelisk" shape="circle" coords="427,251, 20"  onmouseover="openModal('32-Obelisk');" onmouseout="closeModal('32-Obelisk');">
+                    <area alt="37-PUP Pool" shape="rect" coords="398,72, 481,116"  onmouseover="openModal('37-Pool');" onmouseout="closeModal('37-Pool');">
+                    <area alt="38-Tennis" shape="rect" coords="521,144, 602,215"  onmouseover="openModal('38-Tennis');" onmouseout="closeModal('38-Tennis');">
+                    <area alt="40-West Gate" shape="circle" coords="689,174, 14"  onmouseover="openModal('40-West-Gate')"; onmouseout="closeModal('40-West-Gate');">
+                </map>
+            </div>
+    
+            <div class="modal" id="9-Grand-Stand" >
+                <div class="modal-content">
+                    <h2>9 - GRAND STAND</h2>
+                    <img src="images/grandstand.jpg" alt="An image containing the PUP Grand Stand">
+                    <p>The lively and spirited bleachers of our school, a vibrant gathering place where cheers echo, school spirit soars, and unforgettable memories are forged. These elevated seating structures provide a front-row view to witness the triumphs, camaraderie, and exhilarating moments of our school's sporting events.</p>
+                </div>
+            </div>
 
+            <div class="modal" id="10-Gymnasium" >
+                <div class="modal-content">
+                    <h2>10 - GYMNASIUM</h2>
+                    <img src="images/gymnasium.jpg" alt="An image containing the PUP Gymnasium">
+                    <p>A vibrant hub of energy, athleticism, and holistic well-being. This area is designed to inspire and empower students to explore their physical potential, foster a love for fitness, and cultivate a lifelong commitment to healthy living.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="11-Chapel" >
+                <div class="modal-content">
+                    <h2>11 - INTERFAITH CHAPEL</h2>
+                    <img src="images/chapel.jpg" alt="An image containing the PUP Chapel">
+                    <p>A place of solace, reflection, and spiritual nourishment. This architectural gem stands as a beacon of faith, offering a tranquil haven for students, staff, and visitors to connect with their spirituality and find moments of peace amidst the busyness of academic life.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="19-Main-Gate" >
+                <div class="modal-content">
+                    <h2>19 - MAIN GATE</h2>
+                    <img src="images/main-gate.jpg" alt="An image containing the PUP Main Gate">
+                    <p>A gateway that encapsulates the spirit of knowledge, growth, and community. Standing tall and resolute, the gate serves as a symbolic threshold, inviting students, staff, and visitors into a realm of learning and discovery.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="22-Open-Court" >
+                <div class="modal-content">
+                    <h2>22 - OPEN COURT</h2>
+                    <img src="images/openCourt.jpg" alt="An image containing the PUP Open Court">
+                    <p>The open court of the university, a versatile space where imagination knows no bounds and creativity takes flight. This expansive outdoor area serves as a canvas for diverse activities, fostering collaboration, self-expression, and a sense of belonging among students and the school community.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="23-CNFS" >
+                <div class="modal-content">
+                    <h2>23 - CNFS BLDG.</h2>
+                    <img src="images/CNFS.jpg" alt="An image containing the CNFS Building">
+                    <p>image tas short desc.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="25-PE" >
+                <div class="modal-content">
+                    <h2>25 - PE BUILDING</h2>
+                    <img src="images/pe.jpg" alt="An image containing the PUP PE Building">
+                    <p>yeah</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="32-Obelisk" >
+                <div class="modal-content">
+                    <h2>32 - PUP OBELISK</h2>
+                    <img src="images/obelisk.jpg" alt="An image containing the PUP Obelisk">
+                    <p>The university's symbol for perfection of the human person and the search for truth. Its five concentric circles represent infinite wisdom and each point of the star signifies integrity, ingenuity, industry, intelligence and internationalism – the core values of PUP as a Total University.</p>
+                </div>
+            </div>
+        
+        
+            <div class="modal" id="37-Pool" >
+                <div class="modal-content">
+                    <h2>10 - SWIMMING POOL</h2>
+                    <img src="images/pool.jpg" alt="An image containing the PUP Swimming Pool">
+                    <p>The swimming pool, where waves of joy, skill, and aquatic adventures await. This aquatic haven beckons students to dive into a world of water-based activities, fostering a love for swimming, promoting physical well-being, and cultivating essential life-saving skills.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="38-Tennis" >
+                <div class="modal-content">
+                    <h2>38 -TENNIS COURT</h2>
+                    <img src="images/tennis.jpg" alt="An image containing the PUP Tennis Court">
+                    <p>The lively and dynamic tennis area of our school, a space where passion, precision, and friendly competition intertwine to create a vibrant sporting atmosphere. A haven for students to hone their skills, engage in spirited matches, and forge lasting friendships through the exhilarating sport of tennis.</p>
+                </div>
+            </div>
+        
+            <div class="modal" id="40-West-Gate" >
+                <div class="modal-content">
+                    <h2>40 - WEST GATE</h2>
+                    <p>image tas short desc.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 PUP Map. All rights reserved.</p>
+    </footer>
 
-    </section>
-
-
-    <section class="description">
-      <div class="modal" id="9-Grand-Stand" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/grandstand.jpg" alt="An image containing the PUP Grand Stand">
-          </div>
-
-          <div class="left">
-            <h2>9 - GRAND STAND</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="10-Gymnasium" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/gymnasium.jpg" alt="An image containing the PUP Gymnasium">
-          </div>
-
-          <div class="left">
-            <h2>10 - GYMNASIUM</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="11-Chapel" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/chapel.jpg" alt="An image containing the PUP Chapel">
-          </div>
-
-          <div class="left">
-            <h2>11 - INTERFAITH CHAPEL</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="19-Main-Gate" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/main-gate.jpg" alt="An image containing the PUP Main Gate">
-          </div>
-
-          <div class="left">
-            <h2>19 - MAIN GATE</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="22-Open-Court" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/openCourt.jpg" alt="An image containing the PUP Open Court">
-          </div>
-
-          <div class="left">
-            <h2>22 - OPEN COURT</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="23-CNFS" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/CNFS.jpg" alt="An image containing the PUP Open Court">
-          </div>
-
-          <div class="left">
-            <span class="close">&times;</span>
-            <h2>23 - CNFS BLDG.</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="25-PE" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/pe.jpg" alt="An image containing the PUP PE Building">
-          </div>
-
-          <div class="left">
-            <h2>25 - PE BUILDING</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="32-Obelisk" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/obelisk.jpg" alt="An image containing the PUP Obelisk">
-          </div>
-
-          <div class="left">
-            <h2>32 - PUP OBELISK</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="modal" id="37-Pool" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/pool.jpg" alt="An image containing the PUP Swimming Pool">
-          </div>
-
-          <div class="left">
-            <h2>10 - SWIMMING POOL</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="38-Tennis" >
-        <div class="modal-content">
-          <div class="right">
-            <img src="images/tennis.jpg" alt="An image containing the PUP Tennis Court">
-          </div>
-
-          <div class="left">
-            <h2>38 -TENNIS</h2>
-            <p>image tas short desc.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal" id="40-West-Gate" >
-        <div class="modal-content">
-          <h2>40 - WEST GATE</h2>
-          <p>image tas short desc.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 PUP Map. All rights reserved.</p>
-  </footer>
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
