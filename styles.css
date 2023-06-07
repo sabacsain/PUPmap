@@ -58,9 +58,9 @@ area:hover {
   margin: 5% auto;
   padding: 2.5rem;
   width: 60%;
-  /*border: 0.01rem solid black;*/
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
+  text-align: justify;
 }
 
 .modal-content img {

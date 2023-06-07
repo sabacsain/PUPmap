@@ -5,38 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUP Map</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/pupLogo.png" type="image/png">
+    <link rel="icon" href="images/pup_logo.png" type="image/png">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1>PUP Map</h1>
     </header>
+
+    <!-- Main Content -->
     <main>
         <section class="map-section">
             <div class="img-container">
-                <img src="images/pup_map3.png" id="photo" alt="PUP Map" usemap="#PUPmap" width="750" height="567">
+                <img src="images/pup_map.png" id="photo" alt="PUP Map" usemap="#PUPmap" width="750" height="567">
 
+                <!-- PUP Map -->
                 <map name="PUPmap">
+                    <area alt="1-Amphitheater" shape="circle" coords="287,306,18" onmouseover="openModal('1-Amphitheater')"; onmouseout="closeModal('1-Amphitheater');">
+
+                    <area alt="2-Banda" shape="circle" coords="203,57,11" onmouseover="openModal('2-Banda')"; onmouseout="closeModal('2-Banda');">
+
+                    <area alt="4-Catwalk" shape="poly" coords="430,155,474,230,477,232,500,232,671,235,671,244,479,241,464,235,459,226,423,160" onmouseover="openModal('4-Catwalk')"; onmouseout="closeModal('4-Catwalk');">
+
+                    <area alt="5-Monument" shape="circle" coords="374,249,8" onmouseover="openModal('5-Monument')"; onmouseout="closeModal('5-Monument');">
+
+                    <area alt="6-Charlie" shape="poly" coords="105,192,89,218,176,269,192,245" onmouseover="openModal('6-Charlie')"; onmouseout="closeModal('6-Charlie');">
+
+                    <area alt="8-Flagpole" shape="circle" coords="395,332,10" onmouseover="openModal('8-Flagpole')"; onmouseout="closeModal('8-Flagpole');">
+
                     <area alt="9-Grand Stand" shape="poly" coords="510,317, 524,328, 480,392, 466,381, 510,317" onmouseover="openModal('9-Grand-Stand')"; onmouseout="closeModal('9-Grand-Stand');">
+                    
                     <area alt="10-PUP Gymnasium" shape="rect" coords="496,64, 613,127"  onmouseover="openModal('10-Gymnasium')"; onmouseout="closeModal('10-Gymnasium');"> 
+                    
                     <area alt="11-Chapel" shape="circle" coords="370,449, 55"  onmouseover="openModal('11-Chapel');" onmouseout="closeModal('11-Chapel');">
+                    
+                    <area alt="13-Lagoon" shape="poly" coords="317,173,306,176,309,215,307,224,298,235,290,249,284,261,280,274,274,282,266,285,256,292,315,292,329,284,338,280,248,270,349,254,344,273,337,233,331,224,331,212,329,187,326,175,329,284,333,281,340,276,285,265,288,257,290,252,293,249,300,234,317,237,349,280,337,284,329,287,288,261,316,196,308,222,307,204,308,214"  onmouseover="openModal('13-Lagoon')"; onmouseout="closeModal('13-Lagoon');">
+
+                    <area alt="14-Dome" shape="circle" coords="275,388,30" onmouseover="openModal('14-Dome')"; onmouseout="closeModal('14-Dome');">
+
+                    <area alt="15-East" shape="poly" coords="253,415,296,415,294,510,286,516,270,516,263,509,251,507" onmouseover="openModal('15-East')"; onmouseout="closeModal('15-East');">
+                    
+                    <area alt="16-North" shape="poly" coords="287,357,309,393,386,353,384,342,382,331,374,316,368,318,364,313" onmouseover="openModal('16-North')"; onmouseout="closeModal('16-North');">
+
+                    <area alt="17-South" shape="poly" coords="190,368,150,390,152,405,197,486,211,499,246,477,243,459,202,379" onmouseover="openModal('17-South')"; onmouseout="closeModal('17-South');">
+
+                    <area alt="18-West" shape="poly" coords="266,355,240,392,166,348,169,33,162,335,170,322,179,315,190,309" onmouseover="openModal('18-West')"; onmouseout="closeModal('18-West');">
+
                     <area alt="19-Main Gate" shape="circle" coords="683,251, 12"  onmouseover="openModal('19-Main-Gate');" onmouseout="closeModal('19-Main-Gate');">
+
+                    <area alt="21-Library" shape="poly" coords="222,67,255,57,272,120,327,106,336,134,279,152,296,214,265,224,246,157,236,159,228,137,242,135"  onmouseover="openModal('21-Library');" onmouseout="closeModal('21-Library');">
+                    
                     <area alt="22-Open Court" shape="poly" coords="431,136, 521,137, 521,227, 473,228, 431,155, 431,136"  onmouseover="openModal('22-Open-Court');" onmouseout="closeModal('22-Open-Court');">
+                    
                     <area alt="23-CNFS" shape="rect" coords="291,519, 421,537" onmouseover="openModal('23-CNFS');" onmouseout="closeModal('23-CNFS');">
+
+                    <area alt="24-Oval" shape="poly" coords="627,316,599,304,579,305,561,312,547,322,482,420,479,431,478,440,480,450,483,461,486,469,496,481,514,494,536,501,552,401,567,496,580,488,588,480,648,393,654,376,654,365,651,348,644,332,632,319,627,316" onmouseover="openModal('24-Oval');" onmouseout="closeModal('24-Oval');">
+                    
                     <area alt="25-PE" shape="rect" coords="347,54, 378,161"  onmouseover="openModal('25-PE');" onmouseout="closeModal('25-PE');">
+
+                    <area alt="26-Pasig" shape="poly" coords="0,35,24,68,26,78,33,84,38,101,41,141,66,210,72,240,82,262,81,311,85,321,86,342,105,365,105,392,120,418,122,444,127,455,123,493,134,532,136,544,137,554,140,562,140,567,0,566,0,34"  onmouseover="openModal('26-Pasig');" onmouseout="closeModal('26-Pasig');">
+
+                    <area alt="27-Ferry" shape="poly" coords="151,493,174,491,171,594150,548"  onmouseover="openModal('27-Ferry');" onmouseout="closeModal('27-Ferry');">
+                    
                     <area alt="32-Obelisk" shape="circle" coords="427,251, 20"  onmouseover="openModal('32-Obelisk');" onmouseout="closeModal('32-Obelisk');">
+
+                    <area alt="34-Pylon" shape="circle" coords="684,228,9"  onmouseover="openModal('34-Pylon');" onmouseout="closeModal('34-Pylon');">
+                    
                     <area alt="37-PUP Pool" shape="rect" coords="398,72, 481,116"  onmouseover="openModal('37-Pool');" onmouseout="closeModal('37-Pool');">
+                    
                     <area alt="38-Tennis" shape="rect" coords="521,144, 602,215"  onmouseover="openModal('38-Tennis');" onmouseout="closeModal('38-Tennis');">
-                    <area alt="40-West Gate" shape="circle" coords="689,174, 14"  onmouseover="openModal('40-West-Gate')"; onmouseout="closeModal('40-West-Gate');">
                 </map>
+            </div>
+
+            <!-- Descriptions -->
+            <div class="modal" id="1-Amphitheater" >
+                <div class="modal-content">
+                    <h2>1 - AMPHITHEATER</h2>
+                    <img src="images/amphitheater.jpg" alt="An image containing the PUP Amphitheater">
+                    <p>A place that oversees the spirit of intellectual discourse, artistic expression, and community engagement within the university.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="2-Banda" >
+                <div class="modal-content">
+                    <h2>2 - BANDA KAWAYAN, SINING LAHI HEADQUARTERS</h2>
+                    <img src="images/banda.jpg" alt="An image containing the PUP Banda Kawayan, Sining Lahi Headquarters">
+                    <p>Home to the well-known orchestra in the Philippines that uses musical instruments made from bamboo and other indigenous materials.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="4-Catwalk" >
+                <div class="modal-content">
+                    <h2>4 - CATWALK</h2>
+                    <img src="images/catwalk.jpg" alt="An image containing the PUP Catwalk">
+                    <p>A place where you can flaunt your outfits and styles of the day! Ready your walks and gears as you go through the pavements (but be careful not to be late!).</p>
+                </div>
+            </div>
+
+            <div class="modal" id="5-Monument" >
+                <div class="modal-content">
+                    <h2>5 - CENTENNIAL MONUMENT</h2>
+                    <img src="images/monument.jpg" alt="An image containing the PUP Centennial Monument">
+                    <p>A symbol of heritage, progress, and the enduring spirit of learning. This commemorates a century of academic excellence, innovation, and the countless contributions of students, faculty, and alumni who have shaped our institution's legacy.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="6-Charlie" >
+                <div class="modal-content">
+                    <h2>6 - CHARLIE DEL ROSARIO STUDENT DEVELOPMENT CENTER</h2>
+                    <img src="images/charlie.jpg" alt="An image containing the PUP Charlie del Rosario Student Development Center">
+                    <p>The area within the university where school services are conducted such as the students' ID processing.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="8-Flagpole" >
+                <div class="modal-content">
+                    <h2>8 - FLAG POLE</h2>
+                    <img src="images/flagpole.jpg" alt="An image containing the PUP Flag Pole">
+                    <p>An area where the feeling of patriotism arises and where the Philippine national anthem will ring in your ear.</p>
+                </div>
             </div>
     
             <div class="modal" id="9-Grand-Stand" >
                 <div class="modal-content">
                     <h2>9 - GRAND STAND</h2>
                     <img src="images/grandstand.jpg" alt="An image containing the PUP Grand Stand">
-                    <p>The lively and spirited bleachers of our school, a vibrant gathering place where cheers echo, school spirit soars, and unforgettable memories are forged. These elevated seating structures provide a front-row view to witness the triumphs, camaraderie, and exhilarating moments of our school's sporting events.</p>
+                    <p>The lively and spirited bleachers of our school, a vibrant gathering place where cheers echo, school spirit soars, and unforgettable memories are forged.</p>
                 </div>
             </div>
 
@@ -44,7 +139,7 @@
                 <div class="modal-content">
                     <h2>10 - GYMNASIUM</h2>
                     <img src="images/gymnasium.jpg" alt="An image containing the PUP Gymnasium">
-                    <p>A vibrant hub of energy, athleticism, and holistic well-being. This area is designed to inspire and empower students to explore their physical potential, foster a love for fitness, and cultivate a lifelong commitment to healthy living.</p>
+                    <p>An area designed to inspire and empower students to explore their physical potential, foster a love for fitness, and cultivate a lifelong commitment to healthy living.</p>
                 </div>
             </div>
         
@@ -52,15 +147,71 @@
                 <div class="modal-content">
                     <h2>11 - INTERFAITH CHAPEL</h2>
                     <img src="images/chapel.jpg" alt="An image containing the PUP Chapel">
-                    <p>A place of solace, reflection, and spiritual nourishment. This architectural gem stands as a beacon of faith, offering a tranquil haven for students, staff, and visitors to connect with their spirituality and find moments of peace amidst the busyness of academic life.</p>
+                    <p>A place of solace, reflection, and spiritual nourishment. This place stands as a beacon of faith, offering a tranquil haven for students, staff, and visitors to connect with their spirituality and find moments of peace amidst the busyness of academic life.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="13-Lagoon" >
+                <div class="modal-content">
+                    <h2>13 - LAGOON</h2>
+                    <img src="images/lagoon.jpg" alt="An image containing the PUP Lagoon">
+                    <p>The university's lagoon, a natural jewel nestled within our campus, serving as a captivating centerpiece, inviting students, faculty, and visitors to immerse themselves in the beauty of nature.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="14-Dome" >
+                <div class="modal-content">
+                    <h2>14 - MAIN BUILDING - DOME</h2>
+                    <img src="images/dome.jpg" alt="An image containing the PUP Main Building - Dome">
+                    <p>The Dome of the Polytechnic University of the Philippines' Main Building.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="15-East" >
+                <div class="modal-content">
+                    <h2>15 - MAIN BUILDING - EAST</h2>
+                    <img src="images/east.jpg" alt="An image containing the PUP Main Building - East">
+                    <p>The East Wing of the Polytechnic University of the Philippines' Main Building.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="16-North" >
+                <div class="modal-content">
+                    <h2>16 - MAIN BUILDING - NORTH</h2>
+                    <img src="images/north.jpg" alt="An image containing the PUP Main Building - North">
+                    <p>The North Wing of the Polytechnic University of the Philippines' Main Building.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="17-South" >
+                <div class="modal-content">
+                    <h2>17 - MAIN BUILDING - SOUTH</h2>
+                    <img src="images/south.jpg" alt="An image containing the PUP Main Building - South">
+                    <p>The South Wing of the Polytechnic University of the Philippines' Main Building.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="18-West" >
+                <div class="modal-content">
+                    <h2>18 - MAIN BUILDING - WEST</h2>
+                    <img src="images/west.jpg" alt="An image containing the PUP Main Building - West">
+                    <p>The West Wing of the Polytechnic University of the Philippines' Main Building.</p>
                 </div>
             </div>
         
             <div class="modal" id="19-Main-Gate" >
                 <div class="modal-content">
                     <h2>19 - MAIN GATE</h2>
-                    <img src="images/main-gate.jpg" alt="An image containing the PUP Main Gate">
+                    <img src="images/main_gate.jpg" alt="An image containing the PUP Main Gate">
                     <p>A gateway that encapsulates the spirit of knowledge, growth, and community. Standing tall and resolute, the gate serves as a symbolic threshold, inviting students, staff, and visitors into a realm of learning and discovery.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="21-Library" >
+                <div class="modal-content">
+                    <h2>21 - NINOY AQUINO LIBRARY AND LEARNING RESOURCES CENTER</h2>
+                    <img src="images/library.jpg" alt="An image containing the PUP Ninoy Aquino Library and Learning Resources Center">
+                    <p>The university's library, home to boundless knowledge, inspiration, and learning opportunities.</p>
                 </div>
             </div>
         
@@ -68,15 +219,23 @@
                 <div class="modal-content">
                     <h2>22 - OPEN COURT</h2>
                     <img src="images/openCourt.jpg" alt="An image containing the PUP Open Court">
-                    <p>The open court of the university, a versatile space where imagination knows no bounds and creativity takes flight. This expansive outdoor area serves as a canvas for diverse activities, fostering collaboration, self-expression, and a sense of belonging among students and the school community.</p>
+                    <p>The open court of the university, an expansive outdoor area serving as a canvas for diverse activities, fostering collaboration, self-expression, and a sense of belonging among students and the school community.</p>
                 </div>
             </div>
         
             <div class="modal" id="23-CNFS" >
                 <div class="modal-content">
                     <h2>23 - CNFS BLDG.</h2>
-                    <img src="images/CNFS.jpg" alt="An image containing the CNFS Building">
-                    <p>image tas short desc.</p>
+                    <img src="images/cnfs.jpg" alt="An image containing the PUP CNFS Building">
+                    <p>The place that birthed numerous successful food and nutrition graduates.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="24-Oval" >
+                <div class="modal-content">
+                    <h2>24 - OVAL</h2>
+                    <img src="images/oval.jpg" alt="An image containing the PUP Oval">
+                    <p>The university's sporting field where various events and sports competitions takes place.</p>
                 </div>
             </div>
         
@@ -84,7 +243,23 @@
                 <div class="modal-content">
                     <h2>25 - PE BUILDING</h2>
                     <img src="images/pe.jpg" alt="An image containing the PUP PE Building">
-                    <p>yeah</p>
+                    <p>The place that birthed numerous successful physical education graduates.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="26-Pasig" >
+                <div class="modal-content">
+                    <h2>26 - PASIG RIVER</h2>
+                    <img src="images/river.jpg" alt="An image containing the Pasig River">
+                    <p>The portion of the Pasig river that can be seen in the Sta. Mesa Area.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="27-Ferry" >
+                <div class="modal-content">
+                    <h2>27 - PASIG RIVER FERRY (STA. MESA STATION)</h2>
+                    <img src="images/ferry.jpg" alt="An image containing the Pasig River Ferry (Sta. Mesa Station)">
+                    <p>The Sta. Mesa station of the ferry-service based in Metro Manila, Philippines.</p>
                 </div>
             </div>
         
@@ -96,12 +271,19 @@
                 </div>
             </div>
         
-        
+            <div class="modal" id="34-Pylon" >
+                <div class="modal-content">
+                    <h2>34 - PUP PYLON</h2>
+                    <img src="images/pylon.jpg" alt="An image containing the PUP Pylon">
+                    <p>The Triad of pillars may also stand for wisdom, strength and beauty because there should be wisdom to contrive, strength to support and beauty to adorn any great or important undertaking.</p>
+                </div>
+            </div>
+
             <div class="modal" id="37-Pool" >
                 <div class="modal-content">
                     <h2>10 - SWIMMING POOL</h2>
                     <img src="images/pool.jpg" alt="An image containing the PUP Swimming Pool">
-                    <p>The swimming pool, where waves of joy, skill, and aquatic adventures await. This aquatic haven beckons students to dive into a world of water-based activities, fostering a love for swimming, promoting physical well-being, and cultivating essential life-saving skills.</p>
+                    <p>The place of water-based activities, teaching students the love for swimming, promoting their physical well-being, and cultivating essential life-saving skills.</p>
                 </div>
             </div>
         
@@ -109,14 +291,7 @@
                 <div class="modal-content">
                     <h2>38 -TENNIS COURT</h2>
                     <img src="images/tennis.jpg" alt="An image containing the PUP Tennis Court">
-                    <p>The lively and dynamic tennis area of our school, a space where passion, precision, and friendly competition intertwine to create a vibrant sporting atmosphere. A haven for students to hone their skills, engage in spirited matches, and forge lasting friendships through the exhilarating sport of tennis.</p>
-                </div>
-            </div>
-        
-            <div class="modal" id="40-West-Gate" >
-                <div class="modal-content">
-                    <h2>40 - WEST GATE</h2>
-                    <p>image tas short desc.</p>
+                    <p>The lively and dynamic tennis area of our school, a space where passion, precision, and friendly competition intertwine to create a vibrant sporting atmosphere.</p>
                 </div>
             </div>
         </section>
